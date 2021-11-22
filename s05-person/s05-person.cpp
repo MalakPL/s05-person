@@ -4,6 +4,10 @@
 #include "King.h"
 #include "Queen.h"
 
+#include "Hello.h"
+#include "Good_evening.h"
+#include "Farewell.h"
+
 #include <io.h>
 #include <fcntl.h>
 
@@ -27,10 +31,20 @@ int main()
 		King Osoba3{ L"Karol",L"Szmajda" };
 		Queen Osoba4{ L"Alicja",L"Haja" };
 
-		std::wcout << Person::who_is_it(Osoba1) << std::endl;
-		std::wcout << Person::who_is_it(Osoba2) << std::endl;
-		std::wcout << Person::who_is_it(Osoba3) << std::endl;
-		std::wcout << Person::who_is_it(Osoba4) << std::endl;
+		wcout << Person::who_is_it(Osoba1) << endl;
+		wcout << Person::who_is_it(Osoba2) << endl;
+		wcout << Person::who_is_it(Osoba3) << endl;
+		wcout << Person::who_is_it(Osoba4) << endl;
+
+		wcout << endl;
+
+		Hello Przywiatnie1{};
+		Good_evening Przywiatnie2{};
+		Farewell Przywiatnie3{};
+
+		wcout << Przywiatnie1.greet(Osoba1) << endl;
+		wcout << Przywiatnie2.greet(Osoba2) << endl;
+		wcout << Przywiatnie3.greet(Osoba3) << endl;
 	}
 	catch (exception ex)
 	{

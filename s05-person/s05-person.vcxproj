@@ -139,6 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Farewell.cpp" />
+    <ClCompile Include="Good_evening.cpp" />
+    <ClCompile Include="Greeting.cpp" />
+    <ClCompile Include="Hello.cpp" />
     <ClCompile Include="King.cpp" />
     <ClCompile Include="Mr.cpp" />
     <ClCompile Include="Mrs.cpp" />
@@ -147,6 +151,10 @@
     <ClCompile Include="s05-person.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Farewell.h" />
+    <ClInclude Include="Good_evening.h" />
+    <ClInclude Include="Greeting.h" />
+    <ClInclude Include="Hello.h" />
     <ClInclude Include="King.h" />
     <ClInclude Include="Mr.h" />
     <ClInclude Include="Mrs.h" />
